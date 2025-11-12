@@ -1,4 +1,4 @@
-Employee Sentiment Analysis Project
+## Employee Sentiment Analysis Project
 📊 Overview
 
 This project analyzes employee messages to assess sentiment and engagement using Natural Language Processing (NLP) and statistical modeling.
