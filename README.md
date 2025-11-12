@@ -1,124 +1,43 @@
-## Employee Sentiment Analysis Project
-📊 Overview
+# 🧠 Employee Sentiment Analysis Project
 
-This project analyzes employee messages to assess sentiment and engagement using Natural Language Processing (NLP) and statistical modeling.
-It was completed as part of an internal AI evaluation assignment using the dataset test.csv (unlabeled).
+## 📋 Overview
+This project analyzes **employee messages** to assess **sentiment and engagement** using **Natural Language Processing (NLP)** and **machine learning** techniques.  
+The dataset (`test.csv`) contains unlabeled text messages that were cleaned, analyzed, and labeled for sentiment.  
 
-The notebook processes raw text, labels sentiment automatically, calculates employee sentiment scores, ranks employees, detects potential “flight risks,” and builds a predictive regression model to study sentiment trends.
+The overall objective is to uncover employee sentiment trends, identify potential flight risks, and build a predictive model to forecast sentiment behavior.
 
-🎯 Project Objectives
+---
 
-Sentiment Labeling: Classify each message as Positive, Negative, or Neutral using TextBlob and VADER hybrid analysis.
+## 🎯 Objectives
+The main goals of the project are:
 
-Exploratory Data Analysis (EDA): Explore the dataset, visualize sentiment trends, and understand engagement patterns.
+1. **Sentiment Labeling** – Automatically classify each message as **Positive**, **Negative**, or **Neutral**.  
+2. **Exploratory Data Analysis (EDA)** – Explore and visualize sentiment trends and message patterns.  
+3. **Employee Score Calculation** – Compute monthly sentiment scores for each employee.  
+4. **Employee Ranking** – Rank employees by their monthly sentiment performance.  
+5. **Flight Risk Identification** – Detect employees at risk (4+ negative messages in a month).  
+6. **Predictive Modeling** – Build a regression model to predict future sentiment scores.
 
-Employee Score Calculation: Compute monthly sentiment scores per employee.
+---
 
-Employee Ranking: Rank employees by positive and negative sentiment scores.
+## 🧩 Dataset
+- **File:** `test.csv`
+- **Description:** Unlabeled dataset of employee messages.
+- **Processed Columns:**
+  - `clean_message` – Preprocessed text data.
+  - `sentiment_label` – Labeled as Positive, Negative, or Neutral.
+  - `month` – Extracted from message timestamps.
+  - `avg_sentiment` – Monthly average sentiment score per employee.
 
-Flight Risk Identification: Identify employees who sent 4+ negative messages in a month.
+---
 
-Predictive Modeling: Build a Linear Regression model to predict sentiment trends using behavioral features.
+## ⚙️ Tools & Libraries
+Developed in **Python** using the following libraries:
 
-🧩 Dataset
-
-File: test.csv
-
-Unlabeled employee messages dataset.
-
-Preprocessed and cleaned during the analysis pipeline.
-
-Augmented with new columns:
-
-clean_message
-
-sentiment_label
-
-polarity_score
-
-month
-
-avg_sentiment
-
-⚙️ Tools & Libraries
-
-Python 3.x
-
-Libraries:
-
-pandas, numpy, matplotlib, seaborn
-
-textblob, nltk, vaderSentiment
-
-scikit-learn (for Linear Regression)
-
-Environment: Jupyter Notebook
-
-🧾 Key Tasks Summary
-🧮 Task 1: Sentiment Labeling
-
-Used a hybrid model combining TextBlob and VADER for accurate classification into Positive, Negative, or Neutral.
-A new column sentiment_label was added to the dataset.
-
-🔍 Task 2: Exploratory Data Analysis (EDA)
-
-Visualized sentiment distribution and employee engagement trends.
-
-Identified top contributors and patterns in monthly sentiment activity.
-
-💬 Task 3: Employee Score Calculation
-
-Each message was scored as:
-
-Positive → +1
-
-Negative → -1
-
-Neutral → 0
-Monthly average sentiment scores were then calculated per employee.
-
-🏆 Task 4: Employee Ranking
-
-Generated top 3 Positive and Negative employees per month using the calculated sentiment scores.
-
-🚩 Task 5: Flight Risk Identification
-
-Flagged employees as flight risks if they sent 4 or more negative messages in a single month.
-
-📈 Task 6: Predictive Modeling
-
-Developed a Linear Regression Model using features like:
-
-Number of messages
-
-Average message word count
-
-Percentage of negative messages
-
-Model performance metrics:
-
-R² Score: ~0.57
-
-RMSE & MAE: Acceptable error margins showing moderate predictive power.
-
-📊 Visualizations
-
-All visualizations (EDA charts, sentiment trends, and ranking plots) are saved in the /visualizations folder.
-Examples include:
-
-Sentiment distribution plot
-
-Monthly sentiment trend per employee
-
-Top positive vs. negative employee charts
-
-🧠 Insights
-
-Majority of employee messages had neutral or positive sentiment.
-
-Few employees consistently produced negative messages → potential disengagement.
-
-Flight risk employees correlated strongly with frequent negative sentiment over short periods.
-
-The regression model indicates message frequency and negativity ratio significantly influence overall sentiment.
-
+| Category | Libraries |
+|-----------|------------|
+| Data Handling | `pandas`, `numpy` |
+| NLP | `textblob`, `vaderSentiment`, `nltk` |
+| Visualization | `matplotlib`, `seaborn` |
+| Machine Learning | `scikit-learn` |
+| Environment | Jupyter Notebook |
