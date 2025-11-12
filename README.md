@@ -50,11 +50,11 @@ Developed in **Python** using the following libraries:
 | **MAE**      | Acceptable range |
 
 
-🏁 Conclusion
+## 🏁 Conclusion
 
 This project demonstrates practical data science and NLP capabilities, showcasing how text analytics and machine learning can drive insights into employee sentiment and engagement.
 
-📌 Notes
+## 📌 Notes
 
 This project is part of an internal evaluation and should not be publicly distributed without authorization.
 The code and data are for educational and assessment purposes only.
