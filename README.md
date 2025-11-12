@@ -49,6 +49,10 @@ Developed in **Python** using the following libraries:
 | **RMSE**     | Moderate         |
 | **MAE**      | Acceptable range |
 
+## Author
+
+Name: Muhammad Rameez
+Submission Title: AI Project Submission — Employee Sentiment Analysis
 
 ## 🏁 Conclusion
 
